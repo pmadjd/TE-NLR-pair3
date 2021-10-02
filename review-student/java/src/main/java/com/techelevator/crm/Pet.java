@@ -38,14 +38,9 @@ public class Pet {
     }
 
     public String listVaccinations() {
-        var output = toString().concat(", ");
-        //for (int i = 0; i < vaccinations.size(); i++) {
-        //    System.out.print(vaccinations.get(i));
-        //    if (i < vaccinations.size() - 1) {
-        //        System.out.print(", ");
-        //    }
-        //}
-        return output;
+        String result = String.join(", ", vaccinations);
+
+        return result;
     }
 }
 

@@ -20,9 +20,11 @@ public class PetTests {
     public void test_list_vaccinations_method() {
         //Act
         List<String> list = new ArrayList();
+
         list.add("Blah");
         list.add("Bloo");
         list.add("Blee");
+        pet.setVaccinations(list);
         String result = pet.listVaccinations();
         //Assert
         Assert.assertEquals("Blah, Bloo, Blee", result);
